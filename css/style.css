@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0
+}
+.wrapper {
+    padding: 10px 10px;
+    height: 300px;
+}
+
+ul {
+    margin-top: 10px;
+    list-style: none;
+    height: 200px;
+    overflow: scroll;
+    padding: 5px 10px;
+    background-color: rgb(223, 221, 221);
+}
+li {
+    list-style: none;
+    margin-top: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+li>p {
+    display: block;
+    overflow: hidden;
+    max-width: 150px;
+}
+input {
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+button {
+    margin-top: 10px;
+    border-radius: 6px;
+    padding: 5px 10px;
+    line-height: 15px;
+}
+
+button:hover {
+    border-color: gray;
+}
+span.remove {
+    display: inline-block;
+    border: 1px solid blue;
+    cursor: pointer;
+    padding: 2px 5px;
+    margin-left: 5px;
+    color:red;
+    font-weight: 600;
+}

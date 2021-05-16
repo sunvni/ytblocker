@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "url": "https://hyou.dev"
+            }
+        },
+        "condition": {
+            "urlFilter": "category",
+            "domains": [
+                "blog.3kyu.net"
+            ],
+            "resourceTypes": [
+                "main_frame"
+            ]
+        }
+    }
+]
