@@ -1,16 +1,41 @@
 {
-    "name": "declarativeNetRequest extension",
-    "version": "1",
+    "manifest_version": 3,
+    "name": "ytblocker",
+    "version": "1.0.0",
+    "description": "block the dogs",
+    "background": {
+        "service_worker": "bg.js"
+    },
     "declarative_net_request": {
-      "rule_resources": [{
-        "id": "ruleset_1",
-        "enabled": true,
-        "path": "sites.json"
-      }]
+        "rule_resources": [
+            {
+                "id": "youtube",
+                "enabled": true,
+                "path": "sites.json"
+            }
+        ]
     },
     "permissions": [
-      "*://*.3kyu.net/*",
-      "declarativeNetRequest"
+        "storage",
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback"
     ],
-    "manifest_version": 3
-  }
+    "host_permissions": [
+        "*://*.youtube.com/*"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/images/get_started16.png",
+            "32": "/images/get_started32.png",
+            "48": "/images/get_started48.png",
+            "128": "/images/get_started128.png"
+        }
+    },
+    "icons": {
+        "16": "/images/get_started16.png",
+        "32": "/images/get_started32.png",
+        "48": "/images/get_started48.png",
+        "128": "/images/get_started128.png"
+    }
+}
