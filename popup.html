@@ -10,7 +10,11 @@
 <body>
     <div class="wrapper">
         <h3>Block all these dog</h3>
-        <input type="text" id="jsNewUrl" placeholder="Enter the dog's name">
+        <input type="text" id="jsQuery" class="form-item" placeholder="The query to block">
+        <a href="#" id="showMore">&gt;Advance</a>
+        <br>
+        <input type="text" id="jsDomain" class="form-item" placeholder="The domain to block" value="youtube.com">
+        <input type="text" id="jsRedirect" class="form-item" placeholder="The domain to redirect" value="https://youtube.com">
         <button id="jsAddBtn">Add</button>
         <ul id="jsUrlList"></ul>
         <script src="js/function.js"></script>

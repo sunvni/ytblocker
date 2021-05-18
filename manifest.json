@@ -1,5 +1,4 @@
 {
-    "manifest_version": 3,
     "name": "ytblocker",
     "version": "1.0.0",
     "description": "block the dogs",
@@ -7,21 +6,20 @@
         "service_worker": "bg.js"
     },
     "declarative_net_request": {
-        "rule_resources": [
-            {
-                "id": "youtube",
-                "enabled": true,
-                "path": "sites.json"
-            }
-        ]
+      "rule_resources": [{
+        "id": "youtube",
+        "enabled": true,
+        "path": "sites.json"
+      }]
     },
     "permissions": [
         "storage",
-        "declarativeNetRequest",
-        "declarativeNetRequestFeedback"
+        "declarativeNetRequest"
     ],
     "host_permissions": [
-        "*://*.youtube.com/*"
+        "*://*.youtube.com/*",
+        "*://*.google.com/*",
+        "*://*.3kyu.net/*"
     ],
     "action": {
         "default_popup": "popup.html",
@@ -37,5 +35,6 @@
         "32": "/images/get_started32.png",
         "48": "/images/get_started48.png",
         "128": "/images/get_started128.png"
-    }
-}
+    },
+    "manifest_version": 3
+  }

@@ -26,9 +26,9 @@ li>p {
     overflow: hidden;
     max-width: 150px;
 }
-input {
+.form-item {
     padding: 5px 10px;
-    border-radius: 2px;
+    margin-bottom: 5px;
 }
 
 button {
@@ -49,4 +49,11 @@ span.remove {
     margin-left: 5px;
     color:red;
     font-weight: 600;
+}
+#jsRedirect, #jsDomain {
+    display: none;
+}
+
+#jsRedirect.active, #jsDomain.active {
+    display: block;
 }

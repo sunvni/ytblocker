@@ -5,13 +5,51 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "url": "https://hyou.dev"
+                "url": "https://youtube.com"
             }
         },
         "condition": {
-            "urlFilter": "category",
+            "urlFilter": "4IWHAxcN93Y",
             "domains": [
-                "blog.3kyu.net"
+                "youtube.com"
+            ],
+            "resourceTypes": [
+                "main_frame"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "priority": 1,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "url": "https://www.youtube.com/watch?v=RE29EUeJAb0"
+            }
+        },
+        "condition": {
+            "urlFilter": "K8RDjiq2OjE",
+            "domains": [
+                "youtube.com"
+            ],
+            "resourceTypes": [
+                "main_frame"
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "priority": 1,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "url": "https://www.youtube.com/watch?v=e-N0De24Hms"
+            }
+        },
+        "condition": {
+            "urlFilter": "kRBBg8jDl1g",
+            "domains": [
+                "youtube.com"
             ],
             "resourceTypes": [
                 "main_frame"
